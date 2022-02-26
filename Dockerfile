@@ -5,7 +5,8 @@ RUN npm install && npm cache clean --force
 COPY * ./
 RUN npm run build
 USER node
-EXPOSE 4000
+ENV PORT=8080
+EXPOSE 8080
 ENTRYPOINT ["node", "dist/main.js"]
 
 # TODO fails on build stage with sh: 1: rimraf: not found
