@@ -1,0 +1,14 @@
+# exclude npm generated files
+node_modules
+
+# exclude unit tests
+test
+
+# exclude e2e tests
+**/*.spec.ts
+
+# exclude build result
+dist
+
+# exclude test reports
+coverage
